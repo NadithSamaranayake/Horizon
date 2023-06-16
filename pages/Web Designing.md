@@ -1,0 +1,7 @@
+- [[WordPress]]
+- [[HTML]]
+- [[CSS]]
+- [[JavaScript]]
+- [[Figma]]
+- [[Colour Psychology]]
+- [[Adobe XD]]

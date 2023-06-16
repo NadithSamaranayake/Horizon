@@ -1,0 +1,6 @@
+- [[software types]]
+- [[Kernel]]
+- [[Shell]]
+- [[Mobile Operating Systems]]
+- [[Computer Memory]]
+- [[Process State Diagram]]
