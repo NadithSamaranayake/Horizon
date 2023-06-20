@@ -1,0 +1,5 @@
+- # Max Width
+- It is targeted for smaller displays
+- ![WhatsApp Image 2023-06-17 at 12.57.34 PM.jpeg](../assets/WhatsApp_Image_2023-06-17_at_12.57.34_PM_1686986908039_0.jpeg)
+- if the display that the webpage is currently displaying had a width equal or less than 600px, the font size of the h1 tag will be set to 15px
+-
