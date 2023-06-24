@@ -3,3 +3,13 @@
 - ![WhatsApp Image 2023-06-17 at 12.57.34 PM.jpeg](../assets/WhatsApp_Image_2023-06-17_at_12.57.34_PM_1686986908039_0.jpeg)
 - if the display that the webpage is currently displaying had a width equal or less than 600px, the font size of the h1 tag will be set to 15px
 -
+- # Min Width
+- It is targeted for larger displays
+- ![WhatsApp Image 2023-06-23 at 11.10.27 AM.jpeg](../assets/WhatsApp_Image_2023-06-23_at_11.10.27_AM_1687499117502_0.jpeg)
+	- It targets the displays which has a width of more than 600px
+- # Combining both
+- ![WhatsApp Image 2023-06-23 at 11.22.03 AM.jpeg](../assets/WhatsApp_Image_2023-06-23_at_11.22.03_AM_1687499550825_0.jpeg)
+	- In this case it'll target displays which has a width between 600px and 900px
+- ![WhatsApp Image 2023-06-23 at 11.24.00 AM.jpeg](../assets/WhatsApp_Image_2023-06-23_at_11.24.00_AM_1687499661953_0.jpeg){:height 445, :width 780}
+	- This will target displays which aren't between 600px and 900px
+	-
