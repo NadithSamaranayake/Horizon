@@ -1,2 +1,4 @@
 - [[Operating System]]
 - [[Computer Networks]]
+- [[Enterprise Application Development]]
+- [[Object Oriented Programming]]
