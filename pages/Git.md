@@ -1,0 +1,11 @@
+## What is Git?
+	- it is an open source distributed version control system.
+	- It is used to co-ordinate the work among the developers
+	- created by Linus Torvalds
+	- creator of Linux, in 2005
+		- came out of Linux development community
+		- Designed to do version control on Linux Kernel
+- ## Commands in Git Bash
+	- ![image.png](../assets/image_1692854340590_0.png)
+	- git checkout
+	- git merge

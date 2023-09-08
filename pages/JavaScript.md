@@ -1,0 +1,37 @@
+-
+- # JavaScript
+	- ## What is JavaSctipt
+		- JavaScript is a scripting language that allows to implement complex things on web page
+		- It is scripting language which means it does not need compiling due to its light weight and it is executed within the user's browser itslef.
+	- ## Benifits of JavaScript
+		- Easy to learn and implement
+		- Fast client-side programming language
+		- Platform indeoendant
+		- has a rich set of frameworks
+	- ## Why JavaScript?
+		- Web development
+		- web applications
+		- server applications
+		- games
+		- machine learning
+	- JavaScript syntax is the set of rules, how JS programs are constructed.
+	- JS is written between the html tags
+	- the **type** attribute defines/ lets the browser know that the following codes are JS codes. this is done because some of the browsers aren't able to identify JS
+	- ## JS Display Outputs
+		- writing into an HTML element, using **innerHTML**
+		- **document.write**
+		- **window.alert()**
+		-
+	- ## Using innerHTML
+	- ## Using document.write
+		- Using document.write() after an HTML document is loaded, will delete all existing HTML
+	- ## Variables in JS
+	- ## When to use var keyword?
+	- ## JS Identifiers
+		- Unique names given to variables are known as identifiers
+	- ## Data types in JS
+	- ## JS Objects
+	- ## Functions
+		- Function is a block of organized, reusable code that is used to perform single, related actions.
+	- ## JS Functions contd.
+		- when sending a string value as a parameter, the string value should be inside single cotes.

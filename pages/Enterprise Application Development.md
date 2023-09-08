@@ -1,0 +1,24 @@
+# Design Patterns in Java
+	- ## what are design patterns in Java?
+		- Design patterns are general re-usable solutions for commonly occurring problems in software designs.
+		- Design patterns aren't specific to java.
+		- It is also known as a collection of templates or blueprints that can be used for many situations which enables developers to create more flexible and efficient code.
+	- ## What are the categorise in Design Patterns?
+		- There are mainly 3 categorise of Design Patterns
+		- ### Creational Patterns
+			- This deals with object creation mechanism
+			- It is used because the traditional object creation might result in design problems or add complexity  to the design.
+			- There are sub categorise for creational patters such as,
+				- **Singleton Pattern:**
+					- Ensures that a class has only one instance and provides a common point to access it.
+				- **Factory Method Pattern:**
+					- Provides an interface for creating instances of a class.
+				- **Abstract Factory Pattern:**
+					- Provides an interface for creating families of related or dependent objects without specifying their classes.
+				- **Builder Pattern:**
+					- Separates the construction of a complex object from its representation.
+				- **Prototype Pattern**
+					- Create new objects by
+	- all logics in model (database connectivity and stuff)
+	- controller connects morel and view
+	- from view ---> to controller
