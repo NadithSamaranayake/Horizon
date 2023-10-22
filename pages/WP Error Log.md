@@ -1,0 +1,4 @@
+- It's better to first install the theme and then install the elementor plugin because sometimes when you do it the other way around, the edit with elementor button won't appear.
+- If the mysql server shutdowns unexpectedly, it is due to an unavailable port or the database need to be repaired. watch this video to fix it.
+	- {{video https://www.youtube.com/watch?v=84IOtc05TuA}}
+-

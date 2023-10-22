@@ -1,6 +1,7 @@
--
+- [[WP Error Log]]
+- [[WP Theme Development]]
 - portal localhost:8080
-## Installing WordPress
+- ## Installing WordPress
 	- download xampp and install it
 	- run xampp and start the apache and mysql servers
 	- click on admin
@@ -14,16 +15,16 @@
 	- create a new folder inside htdocs and copy the files which were in the extracted wordpress setuop file into the new folder in htdocs
 	- open the web browser and type **localhost/(new folder name)/**
 		- if there was an port error, type in the port number (localhost:8080/(foldername)) and then login
-	- install wordpress. (admin1234)
-## What is Web Design?
+	- install wordpress.(admin) (admin1234)
+- ## What is Web Design?
 	- Web design governs everything involved with the visual aesthetics and usability of a website -- color scheme, layout, information flow, and everything else related to the visual aspects of the UI/UX (User Interface and User Experience)
-## Content Management System (CMS)
+- ## Content Management System (CMS)
 	- CMS provided an organization with a way to manage digital information on a website through creating and maintaining content without prior knowledge of web programming or markup languages.
 	- Some content management systems are free , such as;
 		- Drupal
 		- Joomla
 		- WordPress
-## What is WordPress
+- ## What is WordPress
 	- WordPress is a free and open source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture  and a template system, referred to within WordPress as themes.
 - after launching localhost:8080/myweb a website will be shown
 - to get to the wordpress dashboard click on the url and type /wp-admin in the end and press enter
@@ -32,3 +33,28 @@
 	- add plugin
 	- type reset on the search bar
 	- install wp-reset plugin
+- ## Adding new users and resetting passwords.
+	- click on user
+	- hover on the existing user and click on edit
+	- then you will be able to change all details regarding the specific user including their password.
+	- the same way you could create new users and give them different access permissions.
+- ## Changing URL structure.
+	- click on settings
+	- click on premalinks
+	- then select a type of url that suits you.
+- ### Themes change the look and feel of your website while plugins add new features to your website.
+- For the website I'm creating, I'm using a theme called ocean and the plugins are ocean extra and elementor
+- Elementor is a popular plugin which is used to edit and redesign your website as you wish
+- When you install a theme and when you're adding demos using that specific theme, you will have to install the necessary plugins to support that demo. the website will suggest all the plugins that should be installed.
+- The reason that we should create a database first, before installing wordpress is, because in the installation process of wordpress, it requires a database name.
+- **All-in-One WP Migration plugin is used to backup the wordpress site.**
+- to design your own logo, head on to **logomaker**.
+-
+- # Designing Attributes
+	- ## Tagline
+		- it is the title which will show in the search bars.
+	- ## Header
+		- we could change the header logo and the elements.
+	- ## Changing primary colour
+		- go to general options
+		- go to general styling and then pick a colour.
