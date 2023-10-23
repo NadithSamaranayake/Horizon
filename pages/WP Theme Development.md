@@ -27,4 +27,11 @@
 - to do that we should create the **functions.php** file.
 	- **Don't change the name of the file**
 - ### Always use unique names for your functions
+- # functions.php
+	- This file is used to to tell WordPress to connect the custom styling files to the theme.
+	- ![image.png](../assets/image_1698032297664_0.png)
+	- This function is used to specifically enqueue the styles for your WordPress theme.
+		- **Enqueue** refers to the system used to manage and add styles to a web page in a proper order.
+		- Enqueue is important because later on when we are adding external plugins to the theme, those plugins might want to add their own scripts. if those styles were added in a messy way, there might be conflicts in the scripts. scripts might run before their dependencies or styles might override each other in an unpredictable way.
+		- The Enqueue system ensures that everything is loaded in a right order and only once.
 -
