@@ -22,7 +22,7 @@
 	- header.php
 	- footer.php
 - To add the styling we should create a separate file to include the styles. in my case I've created a folder name css and then I have created a css file with the theme name. you could use any name you want.
-- To add the javascript functions, I have done the same thing.
+- To add the JavaScript functions, I have done the same thing.
 - By default wordpress don't include the styles to your theme. we should instruct wordpress to include the style file to our theme.
 - to do that we should create the **functions.php** file.
 	- **Don't change the name of the file**
@@ -34,4 +34,16 @@
 		- **Enqueue** refers to the system used to manage and add styles to a web page in a proper order.
 		- Enqueue is important because later on when we are adding external plugins to the theme, those plugins might want to add their own scripts. if those styles were added in a messy way, there might be conflicts in the scripts. scripts might run before their dependencies or styles might override each other in an unpredictable way.
 		- The Enqueue system ensures that everything is loaded in a right order and only once.
--
+	- ![image.png](../assets/image_1698205542076_0.png)
+		- This action is used to call the function to execute.
+			- The 'wp_enqueue_scripts' is what tell wordpress to include all the scripts to the theme.
+			- Because it is an action, we code it between single quotes and represent it as a string.
+	- ![image.png](../assets/image_1698205730759_0.png)
+		- The second parameter is the name of the function that the action should execute.
+		- This also should be in single quotes.
+	- The last 2 parameters aren't needed. we can just erase them.
+	- Even though all the php syntaxes are correct, we should specify WordPress to print all the styles.
+	- To do that we should use a premade function inside the header of the header.php file.
+	- **<?php wp_head(); ?>**
+		- This function connects all the WordPress hooks and functions.
+	-
