@@ -55,4 +55,18 @@
 			- **<?php wp_footer(); ?>**
 				- This code line will include and execute the functions that are necessary to run the js scripts.
 - # Lesson 03: Creating a custom menu and displaying specific pages on specific sections
+	- First we should go to the pages section in the WordPress dashboard and create some pages.
+	- By default when we click on appearance there is a sub  menu called **Menu** to add and customize our menues.
+	- In our case it is not yet added to our theme.
+	- ![image.png](../assets/image_1698230584933_0.png)
+		- If we want to activate a specific theme support when we are creating a theme, it's better to include this hook in a function.
+		- ![image.png](../assets/image_1698230783639_0.png)
+			- In here we could state to execute the function after initialization. which is recommended in most cases.
+			- ![image.png](../assets/image_1698232850778_0.png)
+			- We use the **init** method because later on we're going to add more functions and more hooks.
+			- To execute after the initialization first we should include **'init'** instead of **'after_setup_theme'**.
+	- After following these steps, if we reload the wp dashboard, we could see the menu sub menu under appearances.
+	- Now, create the menu with the necessary navigation links
+	- After that all we have to do is display the navigation menu in the header.
+	-
 	-
