@@ -68,5 +68,17 @@
 	- After following these steps, if we reload the wp dashboard, we could see the menu sub menu under appearances.
 	- Now, create the menu with the necessary navigation links
 	- After that all we have to do is display the navigation menu in the header.
-	-
+	- To do that we have to add this code line in the header.php file which will instruct wordpress to display the menu that we created.
+	- ![image.png](../assets/image_1698281140065_0.png)
+	- To display a specific menu, we have to provide the theme location in the parameters. it is done as follows;
+		- ![image.png](../assets/image_1698281253110_0.png)
+		- The theme location, in this case it's **primary** should be the exact name that we have given in the functions.php file.
+		- ![image.png](../assets/image_1698281334282_0.png)
+	- we could create multiple navigations by duplicating the **register_nav_menu** code line.
+		- ![image.png](../assets/image_1698281497807_0.png)
+		- In here we have created another menu called **secondary** and as the description we have stated it as the footer navigation.
+		- To display this navigation on our theme we should instruct wordpress to display the menu as we did with the primary menu.
+		- To do that we should include this code line in the footer.php file because this menu was intended to be displayed in the footer.
+			- ![image.png](../assets/image_1698282262857_0.png)
+		- Now, all we have to is to go to the wp dashboard, under menus, create a new menu and select the footer navigation and select the pages that you intend to display in that menu and save it.
 	-

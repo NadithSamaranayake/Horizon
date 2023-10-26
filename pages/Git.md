@@ -9,3 +9,5 @@
 	- ![image.png](../assets/image_1692854340590_0.png)
 	- git checkout
 	- git merge
+- https://chat.openai.com/c/6468df46-3dee-4186-ad79-0e41c3a6bbf8
+-
