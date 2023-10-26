@@ -81,4 +81,6 @@
 		- To do that we should include this code line in the footer.php file because this menu was intended to be displayed in the footer.
 			- ![image.png](../assets/image_1698282262857_0.png)
 		- Now, all we have to is to go to the wp dashboard, under menus, create a new menu and select the footer navigation and select the pages that you intend to display in that menu and save it.
-	-
+- # Lesson 04: Using Post Loop and custom body class
+	- We are done with the header navigation and the footer navigation. now we have to do is include content to our body section.
+	- The content in the body section is included in the index.php file.
