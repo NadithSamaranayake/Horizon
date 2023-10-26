@@ -95,4 +95,10 @@
 		- Under your homepage displays, click  A static page
 		- Under Homepage select the page that you want as the home page.
 		- Create a separate page to include your blog posts and then navigate to the same location and select the page name where you want your posts to be displayed under Posts page.
-		-
+		- After that go to Menus under appearance and add the blog page that you created to the menu structure.
+		- Now you could see the posts that you created under the blog tab
+	- If we inspect elements and navigate through our navigation menu, you could see that nothing changes in the elements because it won't identify the changes. because of this it will be hard to add changes to the theme using separate plugins or in a different theme editor. to prevent that;
+		- Open the header.php file and add the below code inside the body tag.
+		- ![image.png](../assets/image_1698326803104_0.png)
+		- now if you inspect elements, WordPress will be able to identify the changes of the classes that you're navigating to.
+	-
