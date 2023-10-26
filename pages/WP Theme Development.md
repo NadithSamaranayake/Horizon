@@ -89,4 +89,10 @@
 		- There are 2 loops in this code, the first loop which is an if condition will check the availability of posts and the second loop which is a while loop prints the posts until there are no posts left to print.
 		- The **<?php the_title(); ?>** which is a pre-built function identifies the title of the post and then prints it. same goes for the content tag.
 		- We have used styles to style the title and the paragraph by closing the php tags and opening them in necessary places.
+	- Even though we have added the codes to add the posts to our theme, if we navigate through our menu section and come back to the home page you would see that the posts would be gone. that's because WordPress default setting is to display the latest posts in our home page. to change this;
+		- Click on settings
+		- Click on Reading
+		- Under your homepage displays, click  A static page
+		- Under Homepage select the page that you want as the home page.
+		- Create a separate page to include your blog posts and then navigate to the same location and select the page name where you want your posts to be displayed under Posts page.
 		-
