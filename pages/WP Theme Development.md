@@ -84,3 +84,9 @@
 - # Lesson 04: Using Post Loop and custom body class
 	- We are done with the header navigation and the footer navigation. now we have to do is include content to our body section.
 	- The content in the body section is included in the index.php file.
+	- Before adding posts to the body section, we should create the posts using the wp dashboard  Posts tab. after creating posts, we should include the below code to the index.php file because it is the file that is used to display the content of our theme.
+		- ![image.png](../assets/image_1698324350741_0.png)
+		- There are 2 loops in this code, the first loop which is an if condition will check the availability of posts and the second loop which is a while loop prints the posts until there are no posts left to print.
+		- The **<?php the_title(); ?>** which is a pre-built function identifies the title of the post and then prints it. same goes for the content tag.
+		- We have used styles to style the title and the paragraph by closing the php tags and opening them in necessary places.
+		-
