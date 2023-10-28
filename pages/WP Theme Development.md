@@ -101,4 +101,20 @@
 		- Open the header.php file and add the below code inside the body tag.
 		- ![image.png](../assets/image_1698326803104_0.png)
 		- now if you inspect elements, WordPress will be able to identify the changes of the classes that you're navigating to.
-	-
+	- If you want to print a custom class in the body, you should do as follow by adding an array inside the php body_class and specifying which class you want to add;
+		- ![image.png](../assets/image_1698468342276_0.png)
+	- The above method will print the given class in every page. to print a specific class in a specific page we should first instruct WordPress to identify the current page where the user is. to do that;
+		- ![image.png](../assets/image_1698469945205_0.png)
+		- this code lines will check whether you are in the home page or not.
+		- If we click on the home page tab and inspect elements, you would see that the class will be **no-awesome-class**.
+		- This is because WordPress, by default it will consider the page which consists the blogs as the home page.
+		- To check whether we are in the front page we could use the **is_front_page()** function instead of the **is_home()** function.
+			- ![image.png](../assets/image_1698470139729_0.png)
+- # Lesson 05: Creating custom & specialized Page Templates
+	- To create a page derived from the normal styling, you should create a separate php file and then edit it as you need.
+	- Always remember to add the **get_header** and **get_footer** functions when creating a new php file for a new page.
+	- But with this method we can't predict the names and create new pages each and every time when a user want to create a page. because of that reason we create a page template.
+	- To inform WordPress that the specific php file is a page template, we should add the template name inside the php tag as follows;
+		- ![image.png](../assets/image_1698477217878_0.png)
+		- To select the template we could navigate to the WordPress dashboard, under pages select the page you want and then you could see a tab to select the page template.
+		- By default WordPress have selected the default template which is the index.php file.
