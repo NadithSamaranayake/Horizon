@@ -118,3 +118,48 @@
 		- ![image.png](../assets/image_1698477217878_0.png)
 		- To select the template we could navigate to the WordPress dashboard, under pages select the page you want and then you could see a tab to select the page template.
 		- By default WordPress have selected the default template which is the index.php file.
+	- If the user decides to change the premalink of a page, the user cannot see view the page again because the new name is not the existing name of the php file. rather than changing the php file name we could assign the page id as the page name which never changes. this will prevent this issue.
+		- To get the id of the page, go to the administration panel (Wp Dashboard), click on the page you want and then click on the URL and see the variable assigned to POST. that is the id of the page.
+		- ![image.png](../assets/image_1698491411603_0.png)
+		- After that change the php file name to **page-8**.
+			- ![image.png](../assets/image_1698491646540_0.png)
+	-
+- # Lesson 06: Adding theme features with add_theme_support
+	- Theme support is important built-in functionality which is used add many features to the theme.
+	- If we are using  a separate php file for functions we don't need to add the add_theme_support hook inside a function. it can be added outside the functions. but if we are using this hook in plugin development, we should add this hook inside a function and then call it using add action.
+	- ![image.png](../assets/image_1698494200514_0.png)
+	- If we use the **custom-header** and add a header image to the website, it won't be displayed. to prevent this we should instruct WordPress to display it. other styles will be displayed because WordPress will generate the inline styles for those styles but for the header image it can't generate because it's a bit complex. therefore we should provide the code.
+	- ![image.png](../assets/image_1698494846989_0.png)
+	- Add the above code line in the header.php file because we want this image to be displayed in the header.
+	- To get detailed information of a hook, type **var_dump(hook name)** inside a php tag. this will display all the information that hook stores.
+		- ![image.png](../assets/image_1698495017488_0.png)
+	- ## post_thumbnails
+		- ![image.png](../assets/image_1698495403143_0.png)
+		- To display the image we should include the necessary code lines in the index.php file.
+			- ![image.png](../assets/image_1698495491506_0.png)
+			- We could use **large** for the post_thumbnail which will make the image large.
+- ### **Visit the Codex page in WordPress to get detailed information on all attributes of hooks.**
+	- https://developer.wordpress.org/reference/functions/add_theme_support/
+- # Lesson 07: Adding & creating post formats.
+	- There are 9 methods to format a post in a website. they are;
+		- **aside**
+		- **gallery**
+		- **link**
+		- **image**
+		- **quote**
+		- **status**
+		- **video**
+		- **audio**
+		- **chat**
+	- ![image.png](../assets/image_1698555185304_0.png)
+	- To see the current format of the post,
+		- ![image.png](../assets/image_1698555369322_0.png)
+	- We could use post formats to include different files to our post based on the post format. to do that , we could use the **get_template_part()** function.
+		- ![image.png](../assets/image_1698555896173_0.png)
+		- I have removed the code lines which were used to display the content of page and added those code lines in file called content.php and called that file inside the **get_template_part()** function. this is how this function is used to add seperate files to our page.
+		- ![image.png](../assets/image_1698556817159_0.png)
+		- In here I have instructed to display the posts based on their formats. In the WordPress dashboard we can select the order of the post which should be displayed. according to that and the file names I have given, it will select the necessary post to display. in here it will first search for the file name 'content' and then search for the post format name. I have created files with the post format names. we could use any name instead of content. (post-image, post-aside)
+			- content-aside
+			- content-image
+- # Lesson 08: Creating sidebars & widgets areas
+	-
