@@ -161,5 +161,21 @@
 		- In here I have instructed to display the posts based on their formats. In the WordPress dashboard we can select the order of the post which should be displayed. according to that and the file names I have given, it will select the necessary post to display. in here it will first search for the file name 'content' and then search for the post format name. I have created files with the post format names. we could use any name instead of content. (post-image, post-aside)
 			- content-aside
 			- content-image
+- # Live Session: Adding bootstrap
+	- WordPress also has pre-built jquery scripts. we could add them using **wp_enqueue_style('jquery');** inside the script enqueue function in functions.php file.
+		- ![image.png](../assets/image_1698559276500_0.png)
+	- By default WordPress includes the jquery file in the header. in some cases this is good and in some it's not.
+	- If we include the jquery in the header, the loading speed of the website will be slower.
+	- Unfortunately we can't assign where the jquery to be loaded unlike when including style sheets.
+	- Another way to make the title clickable,
+		- ![image.png](../assets/image_1698588789749_0.png)
+		- This method is mainly used because it provides more security.
+		- ![image.png](../assets/image_1698589248423_0.png)
+			- The esc_url code is used because hackers could inject to the permalink and gain access to our database, to prevent that we use the **esc_url()** code line and include the get_permalink() code as a parameter in it.
+		- In here the we don't directly add the get_permalink code inside the a href="" code line because it's not secure. instead of that method we have used **%s** to represent the esc_url(get_permalink()) code.
+		- In php when we add a comma next to the first parameter in the sprintf, it'll consider what's type after the comma as the values in the first parameter.
+		- ![image.png](../assets/image_1698592876527_0.png)
+			- This is the normal that can be used to link the title of the post
+	-
 - # Lesson 08: Creating sidebars & widgets areas
 	-
