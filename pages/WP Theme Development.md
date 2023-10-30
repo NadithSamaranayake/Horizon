@@ -176,6 +176,16 @@
 		- In php when we add a comma next to the first parameter in the sprintf, it'll consider what's type after the comma as the values in the first parameter.
 		- ![image.png](../assets/image_1698592876527_0.png)
 			- This is the normal that can be used to link the title of the post
-	-
 - # Lesson 08: Creating sidebars & widgets areas
+	- When adding a new sidebar we should register it first.
+	- To do that we should include the below code lines in the functions.php file
+		- ![image.png](../assets/image_1698631920331_0.png)
+		- The last 4 parameters are really important because it allows to fully customize the markup of a single widget that you activated in the front-end and it is necessary to specify the mark-up that will be created around a single widget.
+		- The aside id and class in the before_widget are connected to the id and class parameters in the array.
+		- After creating the function we should call the function using the **add_action** hook.
+			- ![image.png](../assets/image_1698633230997_0.png){:height 424, :width 687}
+	- After creating the function and calling the function, we should instruct WordPress to display the sidebar. to do that we should create a separate php file (sidebar.php)
+		- ![image.png](../assets/image_1698637830939_0.png)
+	- After that we should call it in the place that you want it to be displayed.
+		- ![image.png](../assets/image_1698637894264_0.png)
 	-
