@@ -197,4 +197,18 @@
 	- or we could create a separate php file for the specific page with their respective page id and give the code to display the necessary sidebar.
 		- ![image.png](../assets/image_1698664683944_0.png)
 	- If there is only one sidebar we could use the code **<?php get_sidebar(); ?>**. but in here there is more than one sidebar, therefore we need to choose the sidebar. that's why we are using the **dynamic_sidebar('(sidebarID)');** code to print the sidebar.
-	-
+- # Lesson 09: Editing the query_posts with WP_Query.
+	- The query posts is a really important functionality in WordPress.
+	- It is the query that handles the generation of the core content of a WordPress installation.
+	- The query_posts code isn't needed to be called because it is called by itself in WordPress. we use this code because we could generate the content whenever and wherever we want.
+	- **WP Query** and the **Get Post** functions are the methods that WordPress provides us to handle the query post without destroying it.
+	- ## Adding the latest post to the home page.
+		- To do this we create a separate php file as the post page of the home page.
+		- ![image.png](../assets/image_1698669992684_0.png)
+		- In here we have created a variable ($lastBlog) to assign the latest post.
+		- We have provided the type what we want to retrieved and how many that we need to be retrieved as parameters in the WP_Query method. by default WordPress will fetch the latest post and in here we have asked only one post to be retrieved.
+		- Because we are dealing with a sensitive method we have to include the **wp_reset_postdata();** function to make sure that no issues will occur in the long run.
+		- After retrieving the latest post we have to display the available content of the home page. to do that,
+			- ![image.png](../assets/image_1698670687122_0.png)
+			- Add these code lines after.
+		-
