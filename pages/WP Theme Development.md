@@ -188,4 +188,13 @@
 		- ![image.png](../assets/image_1698637830939_0.png)
 	- After that we should call it in the place that you want it to be displayed.
 		- ![image.png](../assets/image_1698637894264_0.png)
+	- If you create multiple sidebars and if you want to assign them to separate pages, you'll have to register the sidebar first in the functions.php file.
+		- ![image.png](../assets/image_1698662110242_0.png)
+	- After that create a seperate php file to call the sidebar.
+		- ![image.png](../assets/image_1698662140651_0.png)
+	- And when you want to assign the specific sidebar you could use a if condition to identify the page id and then display the specific sidebar that you need for that page.
+		- ![image.png](../assets/image_1698664632589_0.png)
+	- or we could create a separate php file for the specific page with their respective page id and give the code to display the necessary sidebar.
+		- ![image.png](../assets/image_1698664683944_0.png)
+	- If there is only one sidebar we could use the code **<?php get_sidebar(); ?>**. but in here there is more than one sidebar, therefore we need to choose the sidebar. that's why we are using the **dynamic_sidebar('(sidebarID)');** code to print the sidebar.
 	-
