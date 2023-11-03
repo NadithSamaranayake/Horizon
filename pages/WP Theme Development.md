@@ -22,7 +22,7 @@
 		- index.php
 		- header.php
 		- footer.php
-	- To add the styling we should create a separate file to include the styles. in my case I've created a folder name css and then I have created a css file with the theme name. you could use any name you want.
+	- To add the styling we should create a separate file to include the styles. in my case I've created a folder named css and then I have created a css file with the theme name. you could use any name you want.
 	- To add the JavaScript functions, I have done the same thing.
 	- By default wordpress don't include the styles to your theme. we should instruct wordpress to include the style file to our theme.
 	- to do that we should create the **functions.php** file.
@@ -211,4 +211,34 @@
 		- After retrieving the latest post we have to display the available content of the home page. to do that,
 			- ![image.png](../assets/image_1698670687122_0.png)
 			- Add these code lines after.
+	- ## Adding 2 other posts which are after the latest post.
+		- As we know WordPress loads the posts in a descending order. where the latest post will be fetched first.
+		- In here we have already set to display the latest post and we want to skip that and print other 2 posts.
+		- ![image.png](../assets/image_1698736667969_0.png)
+		- the **&offset=1** parameter in the WP_Query function instructs WordPress to skip one post and retrieve the other post.
+		- In here because we have setted the **&posts_per_page=1** WordPress will retrieve only one post.
+	- ## Adding a post of a specific category.
+		- To identify the category of the post we should get the category ID of the certain post.
+		- To do that go the WP dashboard, under posts click on category after that click on the category you want. click on the URI and then you'll see the tag_id which is the category ID.
+		- ![image.png](../assets/image_1698738723286_0.png)
+		- We use the id, in case if the category name change.
+		- To use the category name and search we could use this method,
+			- ![image.png](../assets/image_1698739869149_0.png)
+			- we could use the category_name parameter to identify the posts by their category name.
+	- When using the WP_Query method, we have to enter numerous parameters to fit our needs. the way that I have used to add the parameters will be messy if there is a lot of parameters to be included. to avoid that we could use an array to assign the parameters and add the array name as the parameter.
+		- ![image.png](../assets/image_1698741810397_0.png)
+- # Lesson 10: Filtering WP_Query with categories.
+	- ![image.png](../assets/image_1698823150458_0.png)
+		- In here we have edited the home page so that it will display 3 latest posts according to their posted time.
+		- The posts are displayed in the format that we created in the content-featured.php file.
+			- ![image.png](../assets/image_1698823231760_0.png)
+		- To display posts that are in a specific category,
+			- ![image.png](../assets/image_1698974832434_0.png)
+			- This will display 3 posts from the categories you have picked.
+			- 10,11,9 are the category ID's. to get that click on the category in the WP dashboard categories section and then click on the URI and check for the tag_ID.
+	- If a post has multiple categories and we want to pick posts that are in one specific category,
+		- ![image.png](../assets/image_1698975062973_0.png)
+		- For an example if want only the posts that under the news category and if there are posts that belong to the news and reviews category, we could just simply add the reviews category ID in the array and it will filter those posts out.
+	- To display the latest post in different categories,
 		-
+-
