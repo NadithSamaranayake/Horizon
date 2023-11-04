@@ -2,3 +2,4 @@
 - If the mysql server shutdowns unexpectedly, it is due to an unavailable port or the database need to be repaired. watch this video to fix it.
 	- {{video https://www.youtube.com/watch?v=84IOtc05TuA}}
 - When using bootstrap make sure to use the classes of the newer version. there are a lot of bootstrap classes that have updated.
+- If some of the functions, styles or scripts doesn't work even though there aren't any errors, stop the mysql and apache servers, close the web page and restart the servers and load the webpage.

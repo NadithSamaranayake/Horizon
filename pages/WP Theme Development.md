@@ -240,5 +240,17 @@
 		- ![image.png](../assets/image_1698975062973_0.png)
 		- For an example if want only the posts that under the news category and if there are posts that belong to the news and reviews category, we could just simply add the reviews category ID in the array and it will filter those posts out.
 	- To display the latest post in different categories,
+		- ![image.png](../assets/image_1698980032070_0.png)
+		- ![image.png](../assets/image_1698980305884_0.png)
+- # Live Session 02
+	- ## Adding a carousel
+		- Get the code for your desired carousel from the bootstrap site.
+			- https://getbootstrap.com/docs/5.3/components/carousel/#how-it-works
+		- ![image.png](../assets/image_1699059560950_0.png)
+		- ![image.png](../assets/image_1699059600829_0.png)
+		- ![image.png](../assets/image_1699059619614_0.png)
+		- ![image.png](../assets/image_1699059635615_0.png)
+		- ![image.png](../assets/image_1699059654718_0.png)
+		- ![image.png](../assets/image_1699059672011_0.png)
 		-
 -
