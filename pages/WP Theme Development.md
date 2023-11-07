@@ -269,4 +269,9 @@
 			- ![image.png](../assets/image_1699354894748_0.png)
 		- To edit the comment options and settings for a post click on the settings option in the WP dashboard and click on the discussion sub menu. there you'll find all settings related to enabling comments for a post.
 - # Lesson 11: Creating a custom search form and managing the search results page.
+	- There are built in php functions to add search forms to the website.
+	- ![image.png](../assets/image_1699364108130_0.png)
+	- The **get_search_form();** function enables a search form according to the where we have placed the code but the search form is a basic form and its far from being attractive.
+	- We could style using html5 theme support. to enable that we should just enable the theme support function in the functions.php file.
+		- ![image.png](../assets/image_1699364765916_0.png)
 	-
