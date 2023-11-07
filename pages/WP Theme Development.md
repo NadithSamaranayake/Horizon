@@ -245,12 +245,28 @@
 - # Live Session 02
 	- ## Adding a carousel
 		- Get the code for your desired carousel from the bootstrap site.
+		  collapsed:: true
 			- https://getbootstrap.com/docs/5.3/components/carousel/#how-it-works
-		- ![image.png](../assets/image_1699059560950_0.png)
-		- ![image.png](../assets/image_1699059600829_0.png)
-		- ![image.png](../assets/image_1699059619614_0.png)
-		- ![image.png](../assets/image_1699059635615_0.png)
-		- ![image.png](../assets/image_1699059654718_0.png)
-		- ![image.png](../assets/image_1699059672011_0.png)
-		-
--
+		- ![image.png](../assets/image_1699148635671_0.png)
+		- ![image.png](../assets/image_1699148668197_0.png)
+		- ![image.png](../assets/image_1699148698183_0.png)
+		- ![image.png](../assets/image_1699148755484_0.png)
+		- ![image.png](../assets/image_1699148820120_0.png)
+		- ![image.png](../assets/image_1699148840860_0.png)
+	- ## Arranging the blog posts.
+		- ![image.png](../assets/image_1699194446968_0.png)
+		- ![image.png](../assets/image_1699194477091_0.png)
+- # Lesson 11: The single.php file, tags, edit links & comment template.
+	- In the layout that we created to display the blog posts, we can't click on the post and view the content of the post. we use the single.php file to achieve this task.
+	- This is happening because by default WordPress selects the latest content type that we have added in our index.php file.
+	- The single.php file won't harm the other functions and content of the webpage. it will be called only when we click on a blog post to view its content.
+	- ![image.png](../assets/image_1699337976591_0.png)
+	- The single.php file behaves like the content.php file. which means we can create separate files based on the content type.
+	- ## Adding a comment section.
+		- The comment template is a built in functionality which calls the actual comments.
+		- ![image.png](../assets/image_1699353582125_0.png)
+		- To enable comments, click on the specific post you want and in the right side under post, scroll down till you see the discussion section. click on that and then you'll see a checkbox to enable comments.
+			- ![image.png](../assets/image_1699354894748_0.png)
+		- To edit the comment options and settings for a post click on the settings option in the WP dashboard and click on the discussion sub menu. there you'll find all settings related to enabling comments for a post.
+- # Lesson 11: Creating a custom search form and managing the search results page.
+	-
